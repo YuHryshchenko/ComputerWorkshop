@@ -1,0 +1,4006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        th {
+            height: 30px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        hr {
+            width: 95%;
+        }
+
+        .w3-example {
+            padding-left: 50px;
+        }
+
+        h2, h3 {
+            padding-left: 10px;
+        }
+
+        p {
+            padding-left: 10px;
+        }
+        
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f9f9f9;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+    
+        .container {
+          width: 80%;
+          margin-top: 20px;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          background-color: #fff;
+          overflow: hidden;
+        }
+    
+        .tabs {
+          display: flex;
+          border-bottom: 1px solid #ccc;
+        }
+    
+        .tab {
+          padding: 10px 20px;
+          cursor: pointer;
+          flex: 1;
+          text-align: center;
+          border-right: 1px solid #ccc;
+          transition: background-color 0.3s;
+        }
+    
+        .tab:last-child {
+          border-right: none;
+        }
+    
+        .tab.active {
+          background-color: LightGrey;
+          font-weight: bold;
+        }
+    
+        .content {
+          display: none;
+          padding: 20px;
+        }
+    
+        .content.active {
+          display: block;
+        }
+    
+        .layout-container {
+          display: flex;
+          flex-direction: column;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          padding: 20px;
+          background-color: #fdfdfd;
+        }
+
+        .header {
+            background-color: lightGrey;
+            padding: 10px;
+            text-align: center;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .main-content {
+            padding: 10px;
+        }
+    
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+    
+        .data-table th, .data-table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+    
+        .data-table th {
+            background-color: #f2f2f2;
+        }
+    
+        .example-image {
+            margin-top: 20px;
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .w3-table-all {
+            border: none;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+      
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Self-paced works / Самостійні роботи</h1>
+
+    <div class="container">
+
+        <div class="tabs">
+            <div class="tab active" data-target="work1">HTML</div>
+            <div class="tab" data-target="work2">CSS</div>
+            <div class="tab" data-target="work3">JavaScript</div>
+        </div>
+
+        <div id="work1" class="content active">
+            <div class="layout-container">
+                <main class="main-content">
+                    <table class="min-table">
+
+                        <tr>
+                            <th style="background-color:LightGray">Self-paced work #1 / Самостійна робота №1</th>
+                        </tr>
+
+                        <tr>
+                            <th style="background-color:LightGray">HTML Tutorial / Підручник HTML</th>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <h2>What is HTML? / Що таке HTML?</h2>
+                                <p>HTML is the standard markup language for creating Web pages. / <br> HTML є стандартною мовою розмітки для створення веб-сторінок.</p>
+                                <ul>
+                                    <li>
+                                        <p>HTML stands for Hyper Text Markup Language / <br> HTML означає Hyper Text Markup Language (мова гіпертекстової розмітки)</p> 
+                                    </li>
+                                    <li>
+                                        <p>HTML is the standard markup language for creating Web pages / <br> HTML описує структуру веб-сторінок за допомогою розмітки</p>
+                                    </li>
+                                    <li>
+                                        <p>HTML describes the structure of a Web page / <br> HTML-елементи є будівельними блоками сторінок HTML</p>                         
+                                    </li>
+                                    <li>
+                                        <p>HTML consists of a series of elements / <br> Елементи HTML представлені тегами</p>
+                                    </li>
+                                    <li>
+                                        <p>HTML elements tell the browser how to display the content / <br> Браузери не відображають HTML теги, але використовують їх для відображення змісту web-сторінки</p>
+                                    </li>
+                                    <li>
+                                        <p>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc. / <br> Теги HTML позначають фрагменти змісту, такі як header (заголовок), paragraph (параграф), table (таблиця) та ін.</p> 
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML Editors / HTML Редактори коду та IDE</h2>
+                                <ol>
+                                    <li>
+                                        <p>  Learn HTML Using Notepad or TextEdit / Писати HTML, використовуючи Блокнот або TextEdit</p> 
+                                        <ul>
+                                            <li>
+                                                <p>Step 1: Open Notepad (PC) or Open TextEdit (Mac) / Крок 1: Відкрити Блокнот (на Windows) чи Відкрийте TextEdit (Mac);</p>
+                                            </li>
+                                            <li>
+                                                <p>Step 2: Write Some HTML / Крок 2. Напишіть HTML код;</p>
+                                            </li>
+                                            <li>
+                                                <p>Step 3: Save the HTML Page / Крок 3: Збережіть HTML сторінку;</p>                         
+                                            </li>
+                                            <li>
+                                                <p>Step 4: View the HTML Page in Your Browser / Крок 4. Відкрийте і перегляньте створену HTML-сторінку в браузері;</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Безоплатні онлайн-редактори коду</p>
+                                        <ul>
+                                            <li>
+                                                <p>Редактор <a href="https://notepad-plus-plus.org/downloads/">Notepad ++</a> ;</p>
+                                            </li>
+                                            <li>
+                                                <p>Редактор <a href="https://brackets.io/">Brackets</a> ;</p>
+                                            </li>
+                                            <li>
+                                                <p>Редактор <a href="https://www.sublimetext.com/">Sublime Text</a> ;</p>                         
+                                            </li>
+                                            <li>
+                                                <p>IDE <a href="https://github.blog/news-insights/product-news/sunsetting-atom/">Atom</a> ;</p>
+                                            </li>
+                                            <li>
+                                                <p>IDE <a href="https://code.visualstudio.com/download">Visual Studio Code</a> ;</p>
+                                            </li>
+                                            <li>
+                                                <p>IDE <a href="https://www.jetbrains.com/ru-ru/phpstorm/">WebStorm / PHPStorm</a> ;</p>
+                                            </li>
+                                            <li>
+                                                <p>IDE <a href="https://www.adobe.com/ua/products/dreamweaver.html">Dreamweaver</a> ;</p>
+                                            </li>
+                                            <li>
+                                                <p>IDE <a href="https://www.eclipse.org/">Eclipse</a> ;</p>
+                                            </li>
+                                            <li>
+                                                <p>IDE <a href="https://netbeans.apache.org/front/main/index.html">NetBeans</a> ;</p>
+                                            </li>
+                                            <li>
+                                                <p>IDE <a href="https://docs.activestate.com/komodo/12/">Komodo</a> ;</p>
+                                            </li>
+                                            <li>
+                                                <p>IDE <a href="https://www.gnu.org/software/emacs/">Emacs</a> ;</p>
+                                            </li>
+                                            <li>
+                                                <p>IDE <a href="https://www.ultraedit.com/">Ultraedit</a> ;</p>
+                                            </li>
+                                            <li>
+                                                <p>IDE <a href="https://developer.apple.com/xcode/">Xcode</a> (для Apple);</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>IDE - Інтегроване середовище розробки</p>
+                                        <ul>
+                                            <li>
+                                                <p><a href="https://code.visualstudio.com/">VS Code</a> - безоплатний;</p>
+                                            </li>
+                                            <li>
+                                                <p><a href="https://github.blog/news-insights/product-news/sunsetting-atom/">Atom</a> - безоплатний (припинено випуск);</p>
+                                            </li>
+                                            <li>
+                                                <p><a href="https://www.adobe.com/ua/products/dreamweaver.html">Dreamweaver</a> - платний;</p>                         
+                                            </li>
+                                            <li>
+                                                <p><a href="https://www.eclipse.org/">Eclipse</a> - безоплатний;</p>
+                                            </li>
+                                            <li>
+                                                <p><a href="https://netbeans.apache.org/front/main/index.html">NetBeans</a> - безоплатний;</p>
+                                            </li>
+                                            <li>
+                                                <p><a href="https://docs.activestate.com/komodo/12/">Komodo</a> - безоплатний;</p>
+                                            </li>
+                                            <li>
+                                                <p><a href="https://www.geany.org/">Geany</a> - безоплатний;</p>
+                                            </li>
+                                            <li>
+                                                <p><a href="https://lighttable.com/">Light Table</a> - безоплатний;</p>
+                                            </li>
+                                            <li>
+                                                <p><a href="https://www.monodevelop.com/">Monodevelop</a> - безоплатний;</p>
+                                            </li>
+                                            <li>
+                                                <p><a href="https://www.ultraedit.com/">Ultraedit</a> - платний;</p>
+                                            </li>
+                                            <li>
+                                                <p><a href="https://www.slickedit.com/">Slickedit</a> - платний;</p>
+                                            </li>
+                                            <li>
+                                                <p><a href="https://developer.apple.com/xcode/">Xcode</a> - безоплатний (для Apple);</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Для веброзробки зазвичай використовуються:</p>
+                                        <ul>
+                                            <li>
+                                                <p><a href="https://www.jetbrains.com/webstorm/">WebStorm</a>  HTML+CSS+JavaScript (платний);</p>
+                                            </li>
+                                            <li>
+                                                <p><a href="https://www.jetbrains.com/phpstorm/">PHPStorm</a> - HTML+CSS+JavaScript+PHP - (платний);</p>
+                                            </li>
+                                            <li>
+                                                <p><a href="https://www.jetbrains.com/pycharm/">PyCharm Professional</a> - Python - (платний);</p>                         
+                                            </li>
+                                            <li>
+                                                <p><a href="https://www.jetbrains.com/pycharm/">PyCharm Community Edition</a> - (безоплатна версія);</p>
+                                            </li>
+                                            <li>
+                                                <p><a href="https://www.jetbrains.com/idea/">IntelliJ IDEA Ultimate</a> - Java, Kotlin - (платний);</p>
+                                            </li>
+                                            <li>
+                                                <p><a href="https://www.jetbrains.com/idea/download/?section=linux">IntelliJ IDEA Community Edition</a> - (безоплатна версія);</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <h2>HTML Basic Examples / HTML Основні приклади</h2>
+                                <h3>HTML Documents / HTML Документи</h3>
+                                <p>
+                                    All HTML documents must start with a document type declaration: <code class="w3-codespan" style="color:brown">&lt;!DOCTYPE html&gt;</code>. / Всі HTML документи мають починатися з оголошення типу документа: <code class="w3-codespan" style="color:brown">&lt;!DOCTYPE html&gt;</code>.<br>
+                                    The HTML document itself begins with <code class="w3-codespan" style="color:brown">&lt;html&gt;</code> and ends with <code class="w3-codespan" style="color:brown">&lt;html&gt;</code>. / Сам HTML документ починається тегом <code class="w3-codespan" style="color:brown">&lt;html&gt;</code> и закінчується тегом <code class="w3-codespan" style="color:brown">&lt;html&gt;</code>.<br>
+                                    The visible part of the HTML document is between <code class="w3-codespan" style="color:brown">&lt;body&gt;</code> and <code class="w3-codespan" style="color:brown">&lt;body&gt;</code>. / Видима частина HTML документа знаходиться поміж <code class="w3-codespan" style="color:brown">&lt;body&gt;</code> та <code class="w3-codespan" style="color:brown">&lt;body&gt;</code>.<br>
+                                </p>
+                                <hr>
+                                <div class="w3-example">
+                                    <h3>Example / Приклад</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>My First Heading / Мій перший заголовок<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>My first paragraph. / Мій перший параграф.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                                     </div>
+                                </div>
+                                <hr>
+
+                                <h3>HTML Headings / HTML Заголовки</h3>
+                                <p>
+                                    HTML headings are defined with the <code class="w3-codespan" style="color:brown">&lt;h1&gt;</code> to <code class="w3-codespan" style="color:brown">&lt;h6&gt;</code> tags. / HTML заголовки визначаються за допомогою тегів від <code class="w3-codespan" style="color:brown">&lt;h1&gt;</code> до <code class="w3-codespan" style="color:brown">&lt;h6&gt;</code>.<br>
+                                    <code class="w3-codespan" style="color:brown">&lt;h1&gt;</code> defines the most important heading. <code class="w3-codespan" style="color:brown">&lt;h6&gt;</code> defines the least important heading: / <br> Тегом <code class="w3-codespan" style="color:brown">&lt;h1&gt;</code> визначаються найбільш важливі заголовки. Тегом <code class="w3-codespan" style="color:brown">&lt;h6&gt;</code> визначаються найменш важливі заголовки:<br>
+                                </p>
+                                <hr>
+                                <div class="w3-example">
+                                    <h3>Example / Приклад</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is heading 1 / Це заголовок 1<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is heading 2 / Це заголовок 2<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h3<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is heading 3 / Це заголовок 3<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h3<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                                     </div>
+                                </div>
+                                <hr>
+
+                                <h3>HTML Paragraphs / HTML Параграфи</h3>
+                                <p>
+                                    HTML paragraphs are defined with the <code class="w3-codespan" style="color:brown">&lt;p&gt;</code> tag: / HTML параграфи визначаються за допомогою тега <code class="w3-codespan" style="color:brown">&lt;p&gt;</code>:
+                                </p>
+                                <hr>
+                                    <div class="w3-example">
+                                        <h3>Example / Приклад</h3>
+                                        <div class="w3-code notranslate htmlHigh">
+                                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a paragraph. / Це параграф.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is another paragraph. / Це інший параграф.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                                        </div>
+                                    </div>
+                                <hr>
+
+                                <h3>HTML Links / HTML Посилання</h3>
+                                <p>
+                                    HTML links are defined with the <code class="w3-codespan" style="color:brown">&lt;a&gt;</code> tag: / HTML посилання визначаються за допомогою тега <code class="w3-codespan" style="color:brown">&lt;a&gt;</code>: 
+                                </p>
+                                <hr>
+                                <div class="w3-example">
+                                    <h3>Example / Приклад</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="https://w3schoolsua.github.io/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a link / Це посилання<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                                     </div>
+                                </div>
+                                <hr>
+                                <p>
+                                    The link's destination is specified in the <code class="w3-codespan" style="color:brown">href</code> attribute. / Призначення посилання вказується в атрибуті <code class="w3-codespan" style="color:brown">href</code>.
+                                </p>
+
+                                <h3>HTML Images / HTML Зображення</h3>
+                                <p>
+                                    HTML images are defined with the <code class="w3-codespan" style="color:brown">&lt;img&gt;</code> tag. / HTML зображення визначаються за допомогою тега <code class="w3-codespan" style="color:brown">&lt;img&gt;</code>.<br>
+                                    The source file (<code class="w3-codespan" style="color:brown">src</code>), alternative text (<code class="w3-codespan" style="color:brown">alt</code>), <code class="w3-codespan" style="color:brown">width</code>, and <code class="w3-codespan" style="color:brown">height</code> are provided as attributes: / <br>
+                                    Початковий файл <code class="w3-codespan" style="color:brown">src</code>, альтернативний текст <code class="w3-codespan" style="color:brown">alt</code>, ширина <code class="w3-codespan" style="color:brown">width</code> і висота <code class="w3-codespan" style="color:brown">height</code> надаються в якості атрибутів:
+                                </p>
+                                <hr>
+                                <div class="w3-example">
+                                    <h3>Example / Приклад</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="../images/w3schools.jpg"</span> alt<span class="attributevaluecolor" style="color:mediumblue">="W3Schools"</span> width<span class="attributevaluecolor" style="color:mediumblue">="104"</span> height<span class="attributevaluecolor" style="color:mediumblue">="142"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                                     </div>
+                                </div>
+                                <hr>
+
+                                <h3>HTML Кнопки</h3>
+                                <p>HTML кнопки визначаються за допомогою тега <code class="w3-codespan" style="color:brown">&lt;button&gt;</code>:</p>
+                                <hr>
+                                <div class="w3-example">
+                                    <h3>Приклад</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>button<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Натисніть мене<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/button<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                                     </div>
+                                </div>
+                                <hr>
+
+                                <h3>HTML Списки</h3>
+                                <p>HTML списки визначаються за допомогою тегів <code class="w3-codespan" style="color:brown">&lt;ul&gt;</code> (невпорядкований / маркований список) або <code class="w3-codespan" style="color:brown">&lt;ol&gt;</code> (упорядкований / нумерований список), <br> з подальшими тегами <code class="w3-codespan" style="color:brown">&lt;li&gt;</code> (пункти списку):</p>
+                                <hr>
+                                <div class="w3-example">
+                                    <h3>Приклад</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Невпорядкований список HTML<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>ul<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Кава<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Чай<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Молоко<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/ul<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Впорядкований список HTML<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>ol<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Кава<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Чай<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Молоко<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/ol<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                                     </div>
+                                </div>
+                                <hr>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML Elements / HTML Елементи</h2>
+                                <h3>HTML Elements / HTML Елементи вебсторінки</h3>
+
+                                <table class="w3-table-all">
+                                    <tbody>
+                                        <tr>
+                                            <th>Початковий тег</th>
+                                            <th>Зміст елементу</th>
+                                            <th>Кінцевий тег</th>
+                                        </tr>
+                                        <tr style="background-color: #cccccc5d">
+                                            <td>&lt;h1&gt;</td>
+                                            <td>Мій перший заголовок</td>
+                                            <td>&lt;/h1&gt;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&lt;p&gt;</td>
+                                            <td>Мій перший параграф.</td>
+                                            <td>&lt;/p&gt;</td>
+                                        </tr>
+                                        <tr style="background-color: #cccccc5d">
+                                            <td>&lt;br&gt;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <h3>Nested HTML Elements / Вкладені HTML елементи</h3>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <h2>HTML Attributes / HTML Атрибути</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML Headings / HTML Заголовки</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML Paragraphs / HTML Параграфи</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML Styles / HTML Стилі</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML Text Formatting / HTML Форматування тексту</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML Quotation and Citation Elements / HTML Елементи цитати та цитування</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML Comments / HTML Коментарі</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML Colors / HTML Кольори</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML Styles - CSS / HTML Стилі - CSS</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML Links / HTML Посилання</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML Images / HTML Зображення</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML Favicon / HTML Фавікон</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML Page Title / HTML Title. Назва (заголовок) сторінки</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML Tables / HTML Таблиці</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML Lists / HTML Списки</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML Block and Inline Elements / HTML Блокові та вбудовані елементи</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML Div Element / HTML Елемент Div</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML class Attribute / HTML Атрибут class</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML id Attribute / HTML Атрибут id</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML Iframes / HTML Iframes - Фрейми</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML JavaScript / HTML JavaScript</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2>HTML File Paths / HTML Шляхи до файлів</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML - The Head Element / HTML Елемент Head</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML Layout Elements and Techniques / HTML Макети</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML Responsive Web Design / HTML Адаптивний веб-дизайн</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML Computer Code Elements / HTML Елементи комп’ютерного коду</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML Semantic Elements / HTML5 Семантичні елементи</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML Style Guide / HTML5 Гід по стилю</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML Entities / HTML Сутності</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML Symbols / HTML Символи</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>Using Emojis in HTML / Використання емодзі в HTML</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML Encoding (Character Sets) / HTML Кодування (Набори символів)</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML Uniform Resource Locators / HTML URL - Уніфіковані локатори ресурсів</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML Versus XHTML / HTML Проти XHTML</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <th style="background-color:LightGray">HTML Forms / HTML Форми</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <h2>HTML Forms / HTML Форми</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML Form Attributes / HTML Атрибути форми</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML Form Elements / HTML Елементи форми</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML Input Types / HTML Типи введення</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML Input Attributes / HTML Атрибути введення</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML Input form* Attributes / HTML Атрибути Input форми</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <th style="background-color:LightGray">HTML5</th>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML5 Інтро</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML5 Підтримка браузерами</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>HTML5 Нові елементи</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>Перехід з HTML4 на HTML5</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr><tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+
+                    </table>
+                </main>
+            </div>
+        </div>
+    
+        <div id="work2" class="content">
+            <div class="layout-container">
+                <main class="main-content">
+                    <table>
+
+                        <tr>
+                            <th style="background-color:LightGray">Self-paced work #2 / Самостійна робота №2</th>
+                        </tr>
+                
+                        <tr>
+                            <th style="background-color:LightGray">CSS Tutorial / Підручник CSS</th>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>What is CSS? / Що таке CSS?</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Syntax / CSS Синтаксис</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>           
+                            <td>
+                                <h2>CSS Selectors / CSS Селектори</h2>
+                            </td>
+                        </tr>
+                        <tr>               
+                            <td>
+                                <h2>How To Add CSS / Як підключити CSS до HTML?</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Comments / CSS Коментарі</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Colors / CSS Кольори</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Backgrounds / CSS Фон</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Borders / CSS Межі</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Margins / CSS Поля (зовнішні відступи)</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Padding / CSS Внутрішній відступ</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Height, Width and Max-width / CSS Висота, ширина і максимальна ширина</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Box Model / CSS Блочна модель</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Outline / CSS Контур</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Text / CSS Текст</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Fonts / CSS Шрифти</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Icons / CSS Іконки</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Links / CSS Посилання</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Lists / CSS Списки</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Tables / CSS Таблиці</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Layout - The display Property / CSS Макет - Властивість display</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Layout - width and max-width / CSS Макет - width та max-width</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Layout - The position Property / CSS Макет - Властивість position</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Layout - The z-index Property / CSS Макет - Властивість z-index</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Layout - Overflow / CSS Макет - Overflow</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Layout - float and clear / CSS Макет - float и clear</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2>CSS Layout - display: inline-block / CSS Макет - display: inline-block</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Layout - Horizontal & Vertical Align / CSS Макет - Горизонтальне & Вертикальне вирівнювання</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Combinators / CSS Комбінатори</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Pseudo-classes / CSS Псевдо-класи</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Pseudo-elements / CSS Псевдо-елементи</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Opacity / Transparency / CSS Непрозорість / Прозорість</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Navigation Bar / CSS Панель навігації (навбар)</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Dropdowns / CSS Випадаючи (що розкриваються) списки</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Image Gallery / CSS Галерея зображень</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Image Sprites / CSS Спрайти зображень</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Attribute Selectors / CSS Селектори атрибутів</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Forms / CSS Форми</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Counters / CSS Лічильники</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Website Layout / CSS Макет вебсайту</h2>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <h2>CSS Units / CSS Одиниці</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Specificity / CSS Специфічність</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS The !important Rule / CSS Правило !important</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>CSS Math Functions / CSS Математичні функції</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <th style="background-color:LightGray">CSS Advanced / CSS Розширений</th>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>        
+                
+                    </table>
+                </main>
+            </div>
+        </div>
+    
+        <div id="work3" class="content">
+            <div class="layout-container">
+                <main class="main-content">
+                    <table>
+
+                        <tr>
+                            <th style="background-color:LightGray">Self-paced work JS / Самостійна робота JS</th>
+                        </tr>
+                
+                        <tr>
+                            <th style="background-color:LightGray">JavaScript Tutorial / Підручник JavaScript</th>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Introduction / JavaScript Вступ</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Where To / JavaScript Установка (Підключення)</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Output / JavaScript Виведення</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2>JavaScript Statements / JavaScript Інструкції / Заяви</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Syntax / JavaScript Синтаксис</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Comments / JavaScript Коментарі</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Variables / JavaScript Змінні</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Let / JavaScript Ключове слово Let</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Const / JavaScript Ключове слово Const</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Operators / JavaScript Оператори</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Arithmetic / JavaScript Арифметичні оператори</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Assignment / JavaScript Присвоєння</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Data Types / JavaScript Типи даних</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Functions / JavaScript Функції</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Objects / JavaScript Об’єкти</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Object Properties</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Object Methods</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Display Objects</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Object Constructors</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Events / HTML Події</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Strings / JavaScript Рядки</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript String Methods / JavaScript Рядкові методи</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript String Search / JavaScript Рядковий пошук</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Template Strings / JavaScript Літерали шаблону</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Numbers / JavaScript Числа</h2>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <h2>JavaScript BigInt</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Number Methods / JavaScript Числові методи</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Number Properties</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Arrays / JavaScript Масиви</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Array Methods / JavaScript Методи масиву</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Array Search</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Sorting Arrays / JavaScript Сортування масивів</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Array Iteration / JavaScript Ітерація масиву</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Array Const / JavaScript Масив Const</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Date Objects / JavaScript Об’єкти дати</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Date Formats / JavaScript Формати дати</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Get Date Methods / JavaScript Методи отримання дати</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Set Date Methods / JavaScript Методи встановлення дати</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Math Object / JavaScript Математичні об’єкти</h2>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <h2>JavaScript Random / JavaScript Рандомні (випадкові) числа</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Booleans / JavaScript Булеві (логічні) значення</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Comparison and Logical Operators / JavaScript Порівняння та Логічні оператори</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript if, else, and else if / JavaScript if, else та else if</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Switch Statement / JavaScript Інструкція Switch</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript For Loop / JavaScript Цикл For</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript For In</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript For Of</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript While Loop / JavaScript Цикл While</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Break and Continue / JavaScript Break та Continue</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Iterables / JavaScript Ітерації</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Sets / JavaScript Сети (Набори)</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Set Methods</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Maps / JavaScript Мапи</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Map Methods</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript typeof</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Type Conversion / JavaScript Перетворення (конвертація) типів</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Destructuring</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Bitwise Operations / JavaScript Побітові операції</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Regular Expressions / JavaScript Регулярні вирази</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Operator Precedence</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Errors / JavaScript Помилки</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Scope / JavaScript Область дії</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Hoisting / JavaScript Хостинг</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Use Strict</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>The JavaScript this Keyword / JavaScript Ключове слово this</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Arrow Function / JavaScript Функція стрілки</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Classes / JavaScript Класи</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Modules / JavaScript Модулі</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript JSON / JavaScript JSON</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Debugging / JavaScript Відладка (дебагінг)</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Style Guide / JavaScript Гід по стилю</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Best Practices / JavaScript Кращі практики</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Common Mistakes / JavaScript Поширені помилки</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Performance / JavaScript Продуктивність</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2>JavaScript Reserved Words / JavaScript Зарезервовані слова</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <th style="background-color:LightGray">JavaScript Object / JavaScript Об’єкти</th>
+                        </tr>
+                        <tr>                    
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr><tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2></h2>
+                            </td>
+                        </tr>        
+                
+                    </table>
+                </main>
+            </div>
+        </div>
+
+    </div>  
+  
+    <script>
+      const tabs = document.querySelectorAll('.tab');
+      const contents = document.querySelectorAll('.content');
+  
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          // Деактивація всіх вкладок і контентів
+          tabs.forEach(t => t.classList.remove('active'));
+          contents.forEach(c => c.classList.remove('active'));
+  
+          // Активація вибраної вкладки і контенту
+          tab.classList.add('active');
+          document.getElementById(tab.dataset.target).classList.add('active');
+        });
+      });
+    </script>
+
+</body>
+</html>
